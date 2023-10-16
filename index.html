@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Solar System</title>
+</head>
+
+<body class="bg-[#121212] transition-all ease-in-out duration-300 delay-300">
+    <div class="flex items-center justify-center pt-[150px]">
+        <h1 class="text-7xl font-mono text-gray-100 text-center">Our Solar System is made up of<br><span
+                class="auto-type font-bold text-yellow-500"></span></h1>
+    </div>
+
+    <div class="flex items-center justify-center m-[100px]">
+        <p class="text-3xl font-mono text-gray-100 text-center">
+            Click here to see our Solar System 👉
+        </p>
+        <button onclick="window.open('SolarSystem/solar.html')" class="ml-5 flex-wrap font-mono bg-white rounded-2xl p-3 font-bold hover:bg-gray-400 text-xl">Know More</button>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        let typed = new Typed(".auto-type", {
+            strings: ['Sun', 'Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'],
+            typeSpeed: 200,
+            backSpeed: 200,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
